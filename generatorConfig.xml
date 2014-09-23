@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <classPathEntry location="/Users/terash/.m2/repository/org/apache/derby/derbyclient/10.10.2.0/derbyclient-10.10.2.0.jar"/>
+  <context id="context1" >
+    <jdbcConnection driverClass="org.apache.derby.jdbc.ClientDriver" connectionURL="jdbc:derby://localhost:1527/MyDB"
+       userId="testuser" password="testpassword" />
+    <javaModelGenerator targetPackage="com.example.maventest.db.model" targetProject="maventest" />
+    <sqlMapGenerator targetPackage="com.example.maventest.db.sql" targetProject="maventest" />
+    <javaClientGenerator targetPackage="com.example.maventest.db.mapper" targetProject="maventest" type="XMLMAPPER" />
+    <table schema="testuser" tableName="test"></table>
+  </context>
+</generatorConfiguration>
